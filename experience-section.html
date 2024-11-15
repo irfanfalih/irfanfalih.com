@@ -1,0 +1,68 @@
+<style>
+    .experience-section { align-items: flex-start; background: #000; display: flex; font-family: Sora, sans-serif; justify-content: flex-start; padding: 60px 80px; overflow: hidden; }
+    @media (max-width: 991px) { .experience-section { padding: 0 20px; } }
+    .container { display: flex; min-width: 240px; width: 1280px; flex-direction: column; overflow: hidden; justify-content: center; padding: 0 32px; }
+    @media (max-width: 991px) { .container { max-width: 100%; padding: 0 20px; } }
+    .title-row { display: flex; width: 100%; align-items: center; gap: 16px; overflow: hidden; font-size: 48px; color: #fff; white-space: nowrap; letter-spacing: -0.96px; line-height: 1; justify-content: center; flex-wrap: wrap; padding: 20px 0; }
+    @media (max-width: 991px) { .title-row { max-width: 100%; font-size: 40px; white-space: initial; } }
+    .title-light { font-weight: 400; align-self: stretch; margin: auto 0; }
+    @media (max-width: 991px) { .title-light { font-size: 40px; } }
+    .title-bold { font-weight: 800; align-self: stretch; margin: auto 0; }
+    @media (max-width: 991px) { .title-bold { font-size: 40px; } }
+    .experience-list { display: flex; margin-top: 20px; width: 100%; flex-direction: column; overflow: hidden; justify-content: flex-start; padding: 40px 24px; }
+    @media (max-width: 991px) { .experience-list { max-width: 100%; padding: 0 20px; } }
+    .experience-item { border-radius: 10px; border: 1px solid #71717a; display: flex; width: 100%; flex-direction: column; justify-content: flex-start; padding: 30px 24px; }
+    @media (max-width: 991px) { .experience-item { max-width: 100%; padding: 0 20px; } }
+    .experience-header { display: flex; width: 100%; font-weight: 600; text-align: center; justify-content: space-between; }
+    @media (max-width: 991px) { .experience-header { max-width: 100%; } }
+    .job-title-wrapper { display: flex; min-width: 240px; align-items: center; gap: 30px; font-size: 24px; color: #fff; letter-spacing: -0.48px; line-height: 1; justify-content: flex-start; flex-wrap: wrap; height: 100%; width: 1018px; }
+    @media (max-width: 991px) { .job-title-wrapper { max-width: 100%; } }
+    .company-logo { aspect-ratio: 1; object-fit: contain; object-position: center; width: 32px; align-self: stretch; margin: auto 0; }
+    .job-title { align-self: stretch; margin: auto 0; }
+    .job-duration { color: #d4d4d8; font-size: 16px; line-height: 1; letter-spacing: -0.32px; margin: auto 0; }
+    .job-description { color: #d4d4d8; font-size: 16px; font-weight: 400; line-height: 24px; letter-spacing: 0.32px; margin-top: 28px; }
+    @media (max-width: 991px) { .job-description { max-width: 100%; } }
+    .experience-item-highlighted { background-color: rgba(39, 39, 42, 1); }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    </style>
+    
+    <section class="experience-section">
+      <div class="container">
+        <header class="title-row">
+          <h2 class="title-light">My</h2>
+          <h2 class="title-bold">Experience</h2>
+        </header>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-header">
+              <div class="job-title-wrapper">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d0430cc0fa43516a03a3ba3895b831df2caf122ee29731d900f4f949b5486815?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" class="company-logo" alt="Google company logo" />
+                <h3 class="job-title">Lead Software Engineer at Google</h3>
+              </div>
+              <p class="job-duration">Nov 2019 - Present</p>
+            </div>
+            <p class="job-description">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
+          </article>
+          <article class="experience-item experience-item-highlighted">
+            <div class="experience-header">
+              <div class="job-title-wrapper">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e76a149be5bf57355e92fbffe544d8d8154d32a269ac440849a7bb5ed15f9e2c?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" class="company-logo" alt="Youtube company logo" />
+                <h3 class="job-title">Software Engineer at Youtube</h3>
+              </div>
+              <p class="job-duration">Jan 2017 - Oct 2019</p>
+            </div>
+            <p class="job-description">At Youtube, I served as a Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.</p>
+          </article>
+          <article class="experience-item">
+            <div class="experience-header">
+              <div class="job-title-wrapper">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef3d76d48790765fc42b4e9f6cfc981d4a3dd885d0b6db1b923c7a75c4f4298d?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" class="company-logo" alt="Apple company logo" />
+                <h3 class="job-title">Junior Software Engineer at Apple</h3>
+              </div>
+              <p class="job-duration">Jan 2016 - Dec 2017</p>
+            </div>
+            <p class="job-description">During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.</p>
+          </article>
+        </div>
+      </div>
+    </section>

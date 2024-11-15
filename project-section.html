@@ -1,0 +1,69 @@
+<style>
+    .projects-section { background: #000; display: flex; flex-direction: column; justify-content: center; padding: 60px 80px; }
+    .projects-container { display: flex; width: 100%; max-width: 1280px; flex-direction: column; padding: 0 32px; }
+    .projects-heading { display: flex; width: 100%; align-items: center; gap: 16px; color: #fff; letter-spacing: -0.96px; justify-content: center; flex-wrap: wrap; padding: 20px 0; font: 48px/1 Sora, sans-serif; }
+    .heading-light { font-weight: 400; }
+    .heading-bold { font-weight: 800; }
+    .project-item { display: flex; margin-top: 20px; width: 100%; align-items: center; gap: 40px; justify-content: flex-start; flex-wrap: wrap; padding: 20px 0; }
+    .project-image { align-self: stretch; display: flex; min-width: 240px; min-height: 476px; align-items: center; justify-content: flex-start; width: 594px; margin: auto 0; }
+    .project-img { aspect-ratio: 1.33; object-fit: contain; object-position: center; width: 530px; border-radius: 19px; box-shadow: 0 8px 18px -6px rgba(24, 39, 75, 0.12); align-self: stretch; min-width: 240px; margin: auto 0; }
+    .project-details { align-self: stretch; display: flex; min-width: 240px; flex-direction: column; font-family: Sora, sans-serif; color: #fff; justify-content: center; flex: 1; }
+    .project-number { font-size: 48px; font-weight: 800; line-height: 1; letter-spacing: -0.96px; }
+    .project-title { font-size: 32px; font-weight: 700; line-height: 1; letter-spacing: -0.64px; margin-top: 28px; }
+    .project-description { color: #71717a; font-size: 16px; font-weight: 400; line-height: 24px; letter-spacing: 0.32px; margin-top: 28px; }
+    .project-link { aspect-ratio: 1; object-fit: contain; object-position: center; width: 20px; margin-top: 28px; }
+    .project-image-right { justify-content: flex-end; }
+    
+    @media (max-width: 991px) {
+        .projects-section { padding: 0 20px; }
+        .projects-container { max-width: 100%; padding: 0 20px; }
+        .projects-heading { max-width: 100%; font-size: 40px; white-space: initial; }
+        .project-item, .project-image, .project-details, .project-number, .project-title, .project-description { max-width: 100%; }
+        .project-number { font-size: 40px; }
+    }
+    </style>
+    
+    <section class="projects-section">
+        <div class="projects-container">
+            <header class="projects-heading">
+                <h2 class="heading-light">My</h2>
+                <span class="heading-bold">Projects</span>
+            </header>
+            
+            <article class="project-item">
+                <div class="project-image">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/43f9f36bf76a169bbda913b954c7e03a7d3e1dc4d87f5368f3a6eb500a20c13f?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Crypto Screener Application Interface" class="project-img" />
+                </div>
+                <div class="project-details">
+                    <span class="project-number">01</span>
+                    <h3 class="project-title">Crypto Screener Application</h3>
+                    <p class="project-description">I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b77a14a07f7a64d0b6946af46f5d9df9d62421730775f6f9230aaa460bd2458a?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Project link" class="project-link" />
+                </div>
+            </article>
+            
+            <article class="project-item">
+                <div class="project-details">
+                    <span class="project-number">02</span>
+                    <h3 class="project-title">Euphoria - Ecommerce (Apparels) Website Template</h3>
+                    <p class="project-description">I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.<br />when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b69814ba621f3e1742d114bb702714d45fc81cc495275345dcd50ec3697aeace?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Project link" class="project-link" />
+                </div>
+                <div class="project-image project-image-right">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/765cfcb922df769e696a91eb3191285a69ff541b2ebc43ee3ccc4fdac5d9575c?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Euphoria Ecommerce Website Template" class="project-img" />
+                </div>
+            </article>
+            
+            <article class="project-item">
+                <div class="project-image">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/80c999f944042751ba3cfc096387c68e3a5baa7012211b437f4ee15b3b96e663?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Blog Website Template" class="project-img" />
+                </div>
+                <div class="project-details">
+                    <span class="project-number">03</span>
+                    <h3 class="project-title">Blog Website Template</h3>
+                    <p class="project-description">I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/74e65b161694ae66693ef5572d76abfc35d68921d08105de9365e19f0f3b82b8?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Project link" class="project-link" />
+                </div>
+            </article>
+        </div>
+    </section>

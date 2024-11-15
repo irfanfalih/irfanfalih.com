@@ -1,0 +1,161 @@
+<style>
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      color: var(--Primary-Black, #000);
+      letter-spacing: -0.4px;
+      justify-content: center;
+      padding: 24px 80px;
+      font: 600 20px/1.2 Sora, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .header-container {
+        padding: 0 20px;
+      }
+    }
+    
+    .header-content {
+      display: flex;
+      width: 100%;
+      max-width: 1280px;
+      align-items: center;
+      gap: 40px 100px;
+      overflow: hidden;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 32px;
+    }
+    
+    @media (max-width: 991px) {
+      .header-content {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+    
+    .logo-wrapper {
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+      text-transform: capitalize;
+      justify-content: start;
+      margin: auto 0;
+    }
+    
+    @media (max-width: 991px) {
+      .logo-wrapper {
+        white-space: initial;
+      }
+    }
+    
+    .logo-image {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 40px;
+      align-self: stretch;
+      margin: auto 0;
+    }
+    
+    .logo-text {
+      align-self: stretch;
+      margin: auto 0;
+    }
+    
+    .nav-menu {
+      align-self: stretch;
+      display: flex;
+      min-width: 240px;
+      align-items: center;
+      gap: 32px;
+      text-transform: capitalize;
+      justify-content: center;
+      margin: auto 0;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-menu {
+        max-width: 100%;
+      }
+    }
+    
+    .nav-item {
+      align-self: stretch;
+      gap: 10px;
+      margin: auto 0;
+    }
+    
+    .nav-item-nowrap {
+      align-self: stretch;
+      gap: 10px;
+      white-space: nowrap;
+      margin: auto 0;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-item-nowrap {
+        white-space: initial;
+      }
+    }
+    
+    .resume-button {
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      background: var(--Primary-Black, #000);
+      background-color: var(--Primary-Black, #000);
+      align-self: stretch;
+      display: flex;
+      min-height: 56px;
+      gap: 8px;
+      color: var(--Primary-White, #fff);
+      white-space: nowrap;
+      letter-spacing: 0.4px;
+      margin: auto 0;
+      padding: 16px 20px;
+    }
+    
+    @media (max-width: 991px) {
+      .resume-button {
+        white-space: initial;
+      }
+    }
+    
+    .resume-text {
+      align-self: stretch;
+      margin: auto 0;
+    }
+    
+    .resume-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 20px;
+      align-self: stretch;
+      margin: auto 0;
+    }
+    </style>
+    
+    <header class="header-container">
+      <div class="header-content">
+        <div class="logo-wrapper">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f466301822a0123570d734f3426582db3ce0c4a1b0ec60a9a706683165bdfdcc?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" class="logo-image" alt="Company logo" />
+          <span class="logo-text">Irfanfalih.com</span>
+        </div>
+        <nav class="nav-menu">
+          <a href="#about" class="nav-item">About Me</a>
+          <a href="#skills" class="nav-item-nowrap">Skills</a>
+          <a href="#projects" class="nav-item-nowrap">Project</a>
+          <a href="#contact" class="nav-item">Contact me</a>
+        </nav>
+        <a href="#resume" class="resume-button" role="button">
+          <span class="resume-text">Resume</span>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d68e0b508cb674652e50eeb888851b903292815d4d698a7ced624352c317d75a?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" class="resume-icon" alt="" />
+        </a>
+      </div>
+    </header>

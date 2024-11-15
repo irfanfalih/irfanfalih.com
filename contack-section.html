@@ -1,0 +1,240 @@
+<style>
+    .contact-form {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 80px;
+    }
+    
+    .container {
+      display: flex;
+      max-width: 1280px;
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 32px;
+    }
+    
+    .form-column, .info-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+      flex-basis: 0%;
+      padding: 20px 0;
+      min-width: 240px;
+    }
+    
+    .input-area {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .form-input {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 4px;
+      border: 1.4px solid #000;
+      padding: 18px 24px;
+      margin-bottom: 20px;
+      font: 400 16px/1 Sora, sans-serif;
+      color: #71717a;
+      letter-spacing: -0.32px;
+    }
+    
+    .form-textarea {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 4px;
+      border: 1.4px solid #000;
+      padding: 16px 24px;
+      margin-bottom: 20px;
+      font: 400 16px/20px Sora, sans-serif;
+      color: #71717a;
+      letter-spacing: -0.32px;
+      min-height: 140px;
+    }
+    
+    .button-group {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    
+    .submit-button {
+      border-radius: 4px;
+      background-color: #000;
+      color: #fff;
+      padding: 16px 20px;
+      font: 600 20px/1.2 Sora, sans-serif;
+      letter-spacing: 0.4px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .social-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 4px;
+      border: 2px solid #000;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    
+    .social-button img {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .info-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+    }
+    
+    .heading-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -0.96px;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    
+    .heading-outline {
+      -webkit-text-stroke: 3px #000;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .subheading {
+      color: #000;
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -0.96px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    
+    .description {
+      color: #71717a;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+      margin-bottom: 40px;
+    }
+    
+    .contact-info {
+      font-size: 28px;
+      color: #000;
+      font-weight: 600;
+      letter-spacing: -0.56px;
+      line-height: 1;
+    }
+    
+    .contact-email {
+      margin-bottom: 16px;
+    }
+    
+    @media (max-width: 991px) {
+      .contact-form {
+        padding: 0 20px;
+      }
+    
+      .container {
+        padding: 0 20px;
+      }
+    
+      .form-column, .info-column {
+        max-width: 100%;
+      }
+    
+      .form-input, .form-textarea {
+        max-width: 100%;
+        padding: 18px 20px;
+      }
+    
+      .heading-group, .subheading {
+        font-size: 40px;
+      }
+    
+      .contact-info {
+        max-width: 100%;
+      }
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+    
+    <section class="contact-form">
+      <div class="container">
+        <div class="form-column">
+          <form class="input-area">
+            <label for="name" class="visually-hidden">Your name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+            
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+            
+            <label for="website" class="visually-hidden">Your website (If exists)</label>
+            <input type="url" id="website" name="website" class="form-input" placeholder="Your website (If exists)">
+            
+            <label for="message" class="visually-hidden">How can I help?</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="How can I help?*" required></textarea>
+            
+            <div class="button-group">
+              <button type="submit" class="submit-button">Get In Touch</button>
+              <button type="button" class="social-button">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8be7734b414c42c3b15ca759dead6a6b1d5eb78f481a5a65cb5d268a964a8419?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Social media icon" class="social-icon">
+              </button>
+              <button type="button" class="social-button">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/79b5ec9aa45b3144a55830fde4021401799429d7dfb2a59d256c022cb1d1f80a?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Social media icon" class="social-icon">
+              </button>
+              <button type="button" class="social-button">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ae18bc3c634cf3e691965d66ae63f4481345209bb5979e8c17197d2097807adf?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Social media icon" class="social-icon">
+              </button>
+              <button type="button" class="social-button">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd375fe72dbd81a73c698fc7aa2aa28c3b59ed47cf6e40e0944795c5f57db3ac?placeholderIfAbsent=true&apiKey=7f2d6e619c424500882c60f5d3f5aafb" alt="Social media icon" class="social-icon">
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="info-column">
+          <div class="info-text">
+            <h2 class="heading-group">
+              <span>Let's</span>
+              <span class="heading-outline">talk</span>
+              <span>for</span>
+            </h2>
+            <p class="subheading">Something special</p>
+            <p class="description">
+              I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.
+            </p>
+            <div class="contact-info">
+              <p class="contact-email">1rfan.falih@gmail.com</p>
+              <p>+6285843367263</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
